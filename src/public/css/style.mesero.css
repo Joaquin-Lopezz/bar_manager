@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  display: block;
+  justify-content: center;
+  align-items: flex-start; /* Cambiar a flex-start para que empiece desde la parte superior */
+  height: 100vh;
+}
+
+/* Contenedor principal */
+
+
+/* Sección de botones */
+.buttonGroup {
+  display: block; /* Asegura que los botones estén en fila */
+  flex-direction: column; /* Mantiene los botones en una columna */
+  margin-bottom: 10px; /* Espacio debajo de los botones */
+}
+
+/* Contenedor de productos */
+.containerProducts {
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+  max-height: 500px;
+  overflow-y: scroll;
+  filter: brightness(1.1); /* Hace que el contenido sea más claro */
+  width: 100%;
+  align-items:left;
+  display: flex;
+  position: absolute;
+  margin-bottom: 10px; /* Espacio debajo del contenedor de productos */
+}
+
+/* Resumen del pedido (fijo a la derecha) */
+.orderSummary {
+  width: 300px; /* Ancho fijo */
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: fixed; /* Fija el resumen al desplazarse */
+  right: 20px;
+  top: 20px; /* Espacio desde la parte superior */
+}
+
+/* Encabezado del pedido */
+.orderSummary h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Lista de productos en el pedido */
+#orderItems {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Elemento de producto en el pedido */
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.product-item:hover {
+  background-color: #e6f7ff;
+}
+
+/* Precio total */
+.total {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #007bb3;
+}
+
+/* Botón de eliminación */
+.product-item button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: #d9363e;
+}
+
+/* Botones */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00a1e4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #007bb3;
+  transform: scale(1.05);
+}

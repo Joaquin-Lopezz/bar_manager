@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+button {
+    background-color: #00a1e4; /* Your preferred color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 5px; /* Margin between buttons */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 16px; /* Font size */
+}
+
+button:hover {
+    background-color: #008bb8; /* Darker shade on hover */
+}
+
+.containerProducts {
+    margin-top: 20px; /* Space above the container */
+    display: grid; /* Grid layout for products */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between items */
+    padding: 10px; /* Padding for the container */
+    background-color: white; /* White background for products */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Optional: Style for product items (add your product item styles here) */
+.product {
+    background-color: #f9f9f9; /* Light background for each product */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for products */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}

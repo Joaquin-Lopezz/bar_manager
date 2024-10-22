@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/public/css/style.mesero.css">
+</head>
+
+
+
+
+    <!-- Sección de botones -->
+    <div class="buttonGroup">
+        <button id="bebidas">Bebidas</button>
+        <button id="comidas">Comidas</button>
+        <button id="postres">Postres</button>
+        <button id="pedidos">Pedidos</button>
+    </div>
+
+    <!-- Contenedor de productos -->
+    <div class="containerProducts"></div>
+
+    <!-- Resumen del pedido -->
+    <div class="orderSummary">
+        <h2>Pedido</h2>
+        <div id="orderItems"></div>
+        <div class="total">Total: $<span id="totalPrice">0.00</span></div>
+    </div>
+
+    <script>
+        window.userRol = "{{rol}}";
+        window.userId = "{{userId}}";
+    </script>
+
+   <script  type="module" src="/public/js/mesero.js"></script>
